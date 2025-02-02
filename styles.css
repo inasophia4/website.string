@@ -26,7 +26,7 @@ body {
     background-image: url('images/checkered.png');
     margin: 5px 0 0 0;
     padding: 2.5rem;
-    width: 95%;
+    width: 100%;
     overflow: hidden;
 }
 .navbar {
