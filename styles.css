@@ -1,0 +1,206 @@
+//* General Styles */
+body {
+    font-family: century gothic, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    color: firebrick;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+    background: firebrick;
+    color: #fff;
+    padding: 2srem 0;
+    font-family: 'century gothic',sans-serif;
+}
+
+.head {
+    background-image: url('images/checkered.png');
+    margin: 5px 0 0;
+    padding: 2.5rem;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: oldlace;
+    color: firebrick;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 3px ;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.slider-container {
+    position: relative;
+    position: relative;
+    width: 300px; /* Adjust the width to make it smaller */
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    border: 3px solid firebrick;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+}
+
+.slides img.active {
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button.prev { left: 5px; }
+button.next { right: 5px; }
+
+/* Menu Section */
+.menu-container {
+    font-family: pitch, monospace;
+    color: firebrick;
+    max-width: 2000px;
+    margin: auto;
+    background: oldlace;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.menu-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-column {
+    width: 45%;
+}
+
+.menu-title {
+    font-family: Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 2px solid #b45329;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    font-family: century gothic, sans-serif;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 3px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0c3a1;
+}
+
+.menu-item h3, .menu-item p {
+    margin: 0;
+}
+.price{
+    font-family: century gothic, sans-serif;
+}
+
+/* About Section */
+.about {
+    padding: 1rem 0;
+    background: oldlace;
+    text-align: justify;
+    font-family: century gothic, sans-serif;
+    color: firebrick;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+    margin: 0; 
+}
+
+/* Contact Section */
+.contact {
+    font-family: century gothic, sans-serif;
+    color: firebrick;
+    padding: 2rem 0;
+    background: oldlace;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact a:link{
+    color: firebrick;
+    text-decoration: none;
+}
+
+.contact a:hover{
+    color: black;
+}
+
+/* Footer */
+.footer {
+    font-family: century gothic, sans-serif;
+    background: firebrick;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}

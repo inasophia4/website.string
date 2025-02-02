@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Pizzeria - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html"><img src="images/logostring.png" width="120px"></a>
+                <ul class="nav-links">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="head">
+        </div>
+        <section class="hero">
+            <div class="home-page">
+                <h1>Welcome to String Pizzeria</h1>
+                <p>Experience the best coffee in town.</p>
+                <p style="font-size: 20px;">
+                    Opening Hour:<br>
+                    Daily opening hours 3:00 p.m. until sold out<br>
+                    Friday 3:30 p.m. until sold out<br>
+                    Closed on Tuesday
+                </p>
+            </div>
+
+            <section class="slider">
+                <div class="slider-container">
+                    <div class="slides">
+                        <img src="images/pizzas.jpeg" alt="Pizza">
+                        <img src="images/foods.jpeg" alt="Delicious Food">
+                        <img src="images/drinks.jpeg" alt="Refreshing Drink">
+                        <img src="images/pasta.jpeg" alt="Chicken Alfredo">
+                        <img src="images/string.jpeg" alt="String">
+                        <img src="images/matcha.jpeg" alt="Matcha Latte">
+                        <img src="images/margherita.jpeg" alt="Margheritta">
+                        <img src="images/oven.jpeg" alt="Oven">
+                        <img src="images/ribena.jpeg" alt="Sparkling Ribena">
+                        <img src="images/pastadrink.jpeg" alt="Pasta and Melon Me">
+                        <img src="images/store.jpeg" alt="The Store">
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </section>
+            
+            <p style="font-family: cursive; text-align: center;">"A buzzing pizza spot where friends and family gather to enjoy hot, cheesy slices straight from the oven."</p>
+    </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 String Pizzeria. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slides img");
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            if (i === index) slide.classList.add("active");
+        });
+    }
+
+    function moveSlide(step) {
+        slideIndex += step;
+        if (slideIndex >= slides.length) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = slides.length - 1;
+        showSlide(slideIndex);
+    }
+
+    // Initialize the first image as active
+    showSlide(slideIndex);
+</script>
+</body>
+</html>
