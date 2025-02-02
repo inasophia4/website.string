@@ -27,6 +27,7 @@ body {
     margin: 5px 0 0;
     padding: 2.5rem;
     width: 90%;
+    overflow: hidden;
 }
 .navbar {
     display: flex;
